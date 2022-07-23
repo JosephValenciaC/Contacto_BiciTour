@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Contacto BiciTour</title>
+</head>
+
+<body>
+    <nav>
+        <nav class="navbar navbar-expand-lg  m-auto" style="background-color: #2ff4a2;">
+            <div class="container-fluid">
+                <a class="navbar-brand m-auto" href="#">Formulario de Contacto de  BiciTour</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right:120px ;" id="navbarNav">
+                    <ul class="navbar-nav">
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row row-cols-1 bo pt-5 row-cols-md-3 g-4" style="padding-left:100px ;">
+            <div class="col">
+                <div class="card border-0 h-100">
+                    <div class="card-body">
+                        <img src='https://cdn.pixabay.com/photo/2018/04/20/17/18/cat-3336579_960_720.jpg' class="img-thumbnail" alt="...">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col pt-5" style="margin-left:150px;">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+          <p>
+            <label class="form-label">
+            Name <input class="form-control" type="text" required  name="bot-field" />
+            </label>
+          </p>
+          <p>
+            <label class="form-label">
+              Email: <input class="form-control" type="email" required name="email" />
+            </label>
+          </p>
+          <p>
+            <label class="form-label">You're a...</label>
+            <select class="form-control" name="role[]">
+              <option value="turista">Tourist</option>
+              <option value="ciudadano">Citizen</option>
+              <option value="no_responder">I wish not to answer</option>
+            </select>
+          </p>
+          <br>
+          <p>
+            <label class="form-label">Enter your message </label>
+            <textarea class="form-control" name="message" required></textarea>
+            
+          </p>
+          <p>
+            <button  class="btn btn-primary" type="submit">Send</button>
+          </p>
+        </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <script type="module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js " integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js " integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy " crossorigin="anonymous "></script>
+
+    <!-- <script type="text/js " src="{% static 'js/app.js'%} "></script> -->
+</body>
+
+</html>
